@@ -1,0 +1,145 @@
+:root {
+    --text-color: black;
+    --bg-color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5cm;
+  color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.dark-mode {
+  --text-color: white;
+  --bg-color: #262626   
+  
+}
+
+
+#toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.navbar {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #072e33;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 150%;
+  left: 0;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #6da5c0;
+  color: black;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding-top: 2cm;
+  transform: translate(-50%, 0);
+  text-align: center;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 30px;
+  color: #05161a;
+  color: var(--h1-color)
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+label {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 20px;
+
+  .logo {
+    height: 50px;
+  }
+}
+
+footer {
+  background-color: #072e33;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer-bottom {
+  padding: 10px;
+}
+
+.mybutton {
+  background-color: #072e33;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}

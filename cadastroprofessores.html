@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" href="./style.css">
+
+<nav>
+  
+    <ul class="navbar">
+        <li><a href="#">Cadastro Professores</a></li>
+        <li><a href="#">Cadastro Alunos</a></li>
+        <li><a href="#">Como se Cadastrar</a></li>
+        <li><a href="#">Fale conosco</a></li>
+    </ul>
+    
+</nav>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadastroProfessores</title>
+</head>
+
+
+<body>
+
+
+    
+
+
+    <div class="header">
+        <h1>CADASTRO DOS PROFESSORES</h1>
+    </div>
+
+<button id="toggle">Modo Escuro</button>
+
+ <form name="CadProf" action="" onsubmit="return CriticaCampos()">
+
+<div dadosgerais>
+    <label for="matprof"><I>Matricula do Professor</I>:</label> <br>
+    <input type="text" name="matprof" placeholder="Digite a matricula" maxlength="5" required><br><br>
+    <label for="nomeprof"><I>Nome do Professor</I></label><br>
+    <input type="text" name="nomeprof" placeholder="Digite nome do professor" maxlength="20" required> <br><br>
+    <label for="nascprof"><I>Data de Nascimento</I></label> <br>
+    <input type="date" name="nascprof" min="1950-01-01" max="2050-01-01" <br><br>
+    <label for="idadeprof"><I>Idade do Professor</I></label><br>
+    <input type="number" name="idadeprof" placeholder="Digite a idade" maxlength="2" required> <br><br>
+</div>
+<div curso>
+    <label for="curprof"><I>Curso do Professor</I>
+    </label><br>
+    <select name="curprof"">
+    <option disabled selected value>Selecione o curso</option>
+    <option value="TDS">Tecnico em desenvolvimento de Sistemas</option>
+    <option value="TEN">Tecnico em Enfermagem</option>
+    <option value="TAD">Tecnico em Administracao</option>
+</select> <br><br>
+</div>
+<div sexo>
+    <h4>Sexo:</h4>
+    <label class="container-radio">Masculino </label>
+        <input type="radio" name="radio">
+   <label class="container-radio">Feminino </label>
+        <input type="radio" name="radio">
+    <label class="container-radio">Outros </label>
+        <input type="radio" name="radio"> <br><br>
+</div>
+
+<div docs>
+    <h4>Documentos:</h4>
+<label class="container-checkbox">RG </label>
+    <input type="checkbox" name="docs">
+<label class="container-checkbox">CPF </label>
+    <input type="checkbox" name="docs">
+<label class="container-checkbox">Titulo de Eleitor </label>
+    <input type="checkbox" name="docs">
+
+</div>
+
+<br><br>
+<br><br>
+
+<button id="myButton" onclick="LimpaCampos()" onmouseover="MostraTexto(this)" onmouseout="ApagaTexto(this)">???????</button>
+<input type="submit" value="Enviar">
+
+<h3> <B>ATENÇÃO</B></h3>
+
+<P>Quando clicado o botão <b>ENVIAR</b> uma critica de todos os campos deve acontecer <I>Nenhum deles
+    pode estar vazio.</I> <br>
+<U>Mostrar uma mensagem de erro</U> caso haja algum problema <B>OU</B><U> mostrar uma mensagem de OK </U> falando que os dados serao enviado para o banco de dados.
+
+</P>
+<script src="./scripts.js"></script>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2>Sobre nós</h2>
+            <p>
+                Bem-vindo à Escola Técnica [Clube da Educação],<br>
+um centro de excelência dedicado ao desenvolvimento e capacitação <br> de
+indivíduos para se destacarem no mundo dinâmico e
+desafiador da tecnologia.
+            </p>
+        </div>
+        <div class="footer-section">
+            <h2>Link Importantes</h2>
+            <ul>
+                <li><a href="Eventos">Eventos</a></li>
+                <li><a href="Cursos">Cursos</a></li>
+                <li><a href="Formacao">Formação</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Endereço</h2>
+            <p>Travessa Dona Maria Rocha Pinheiro 234, Juiz de Fora - MG</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2023 Clube da Educação. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</html>
